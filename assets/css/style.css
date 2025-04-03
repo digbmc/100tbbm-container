@@ -9,7 +9,8 @@
 
 body {
     font-size: 1rem;
-    font-family: "proxima-nova", sans-serif;
+    /* font-family: "proxima-nova", sans-serif; */
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #2e294e;
@@ -44,15 +45,16 @@ li {
     flex-direction: column;
     justify-content: flex-start;
     width:600px; 
+    /* font-family: "ivy-mode", sans-serif; */
+    font-family: "Oswald", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
 }
 
 .title-span-1 {
     color: #2e294e;
     font-size: 2rem;
     margin:0px;
-    font-family: "ivymode", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .title-span-2 {
@@ -62,9 +64,6 @@ li {
     margin-top:-10px;
     margin-bottom:0px;
     margin-right:0px;
-    font-family: "ivymode", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .title-span-3 {
@@ -74,10 +73,7 @@ li {
     margin-top:-15px;
     margin-bottom:10px;
     margin-right:0px;
-    margin-left:0px;
-    font-family: "ivymode", sans-serif;
-    font-weight: 400;
-    font-style: norma;;   
+    margin-left:0px;  
 }
 
 h4 {
