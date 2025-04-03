@@ -148,6 +148,8 @@ a {
 #main-iframe {
     width: 100%;
     border: none;
+    min-height: 50vh;
+    /* the height can be changed to the full height of the iframe content */
 }
 
 /*
