@@ -30,17 +30,15 @@ console.log('JavaScript is working!');
 
 // console.log(category);
 
-document.addEventListener('DOMContentLoaded', function() {
-    var button = document.getElementById('colorButton');
-    button.addEventListener('click', function() {
-        window.location.reload();
+// document.addEventListener('DOMContentLoaded', function() {
+//    var button = document.getElementById('colorButton');
+//    button.addEventListener('click', function() {
+//        window.location.reload();
         // var colors = ['pink', 'purple', 'red'];
         // var randomColor = colors[Math.floor(Math.random() * colors.length)];
         // button.style.backgroundColor = randomColor; // Change to any color you like
-    });
-});
-
-
+//    });
+// });
 
 
 // document.getElementById('demo').innerText = 'Hello JavaScript!';
@@ -53,12 +51,3 @@ document.addEventListener('DOMContentLoaded', function() {
 // function reload(){
 //     Window.location.reload();
 // };
-
-var thisBrynMawr = document.getElementById("thisBrynMawr");
-var loader = document.getElementById("loader");
-var button = document.getElementById("colorButton");
-
-button.onclick = function (){
-    thisBrynMawr.classList.add("hidden");
-    loader.classList.remove("hidden");
-} 

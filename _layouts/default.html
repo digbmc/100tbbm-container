@@ -5,9 +5,43 @@
     <main>
         {% include header.html %}
         <div id="main-content">
-            {{ content }}
+            <!-- <h4>At this Bryn Mawr... </h4> -->
+            <div id="initialContent" class="">This is where the iframe will be!</div>
+            <div id="loader" class="hidden"><p>Loading...</p></div>
+            <div id="thisBrynMawr" class="hidden">
+                <iframe id="mainIframe" title="About this Bryn Mawr" src="{{ page.iframe-src }}" onload="reveal()"></iframe>
+            </div>
         </div>
         {% include footer.html %}
     </main>
 </body>
 </html>
+
+<script>
+    // JavaScript for the Main Button
+
+    var button = document.getElementById("mainButton");
+    var initial = document.getElementById("initialContent");
+    var loader = document.getElementById("loader");
+    var iframe = document.getElementById("mainIframe");
+    var iframeContainer = document.getElementById("thisBrynMawr");
+
+    // Function for when the 
+    function loading(){
+        // hide initial content and iframe
+        initial.classList.add("hidden");
+        iframeContainer.classList.add("hidden");
+        // show the loader
+        loader.classList.remove("hidden");
+        // reload the iframe by "changing" src
+        iframe.src = iframe.src;
+        console.log("Loading...");
+    }
+
+    function reveal(){
+        initial.classList.add("hidden");
+        loader.classList.add("hidden");
+        iframeContainer.classList.remove("hidden");
+        console.log("Done loading!");
+    }
+</script>
