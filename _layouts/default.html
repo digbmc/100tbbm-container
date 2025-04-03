@@ -6,10 +6,10 @@
         {% include header.html %}
         <div id="main-content">
             <!-- <h4>At this Bryn Mawr... </h4> -->
-            <div id="initialContent" class="">This is where the iframe will be!</div>
-            <div id="loader" class="hidden"><p>Loading...</p></div>
-            <div id="thisBrynMawr" class="hidden">
-                <iframe id="mainIframe" title="About this Bryn Mawr" src="{{ page.iframe-src }}" onload="reveal()"></iframe>
+            <div id="initial-content" class=""><h4>At this Bryn Mawr...</h4></div>
+            <div id="loader-container" class="hidden">Loading...<!--<div class="loader"></div>--></div>
+            <div id="iframe-container" class="hidden">
+                <iframe id="main-iframe" title="About this Bryn Mawr" src="{{ page.iframe-src }}" onload="reveal()"></iframe>
             </div>
         </div>
         {% include footer.html %}
@@ -20,11 +20,11 @@
 <script>
     // JavaScript for the Main Button
 
-    var button = document.getElementById("mainButton");
-    var initial = document.getElementById("initialContent");
-    var loader = document.getElementById("loader");
-    var iframe = document.getElementById("mainIframe");
-    var iframeContainer = document.getElementById("thisBrynMawr");
+    var button = document.getElementById("main-button");
+    var initial = document.getElementById("initial-content");
+    var loader = document.getElementById("loader-container");
+    var iframe = document.getElementById("main-iframe");
+    var iframeContainer = document.getElementById("iframe-container");
 
     // Function for when the 
     function loading(){
