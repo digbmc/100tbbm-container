@@ -36,6 +36,8 @@
     function reveal(){
         // hide the loader
         loader.classList.add("hidden");
+        // set the height of the iframe as the height of the iframe content
+        iframeContainer.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
         // show the iframe
         iframeContainer.classList.remove("hidden");
         console.log("Done loading!");
