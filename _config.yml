@@ -1,0 +1,19 @@
+# Setup
+title:               '100 Thousand Billion Bryn Mawrs'
+tagline:             
+description:         'Inspired by "100 Thousand Billion Poems" by French poet and Oulipo visionary Raymond Queneau, 100 Thousand Billion Bryn Mawrs is a group poem created by students at Bryn Mawr'
+url:                 'https://digbmc.github.io'
+baseurl:             '/100tbbm-container'
+
+# About/contact
+author:
+  name:              Digital Scholarship at Bryn Mawr College
+  url:               https://digitalscholarship.brynmawr.edu/
+  email:             digitalscholarship@brynmawr.edu
+
+# Permalinks
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
