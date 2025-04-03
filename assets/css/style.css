@@ -121,7 +121,7 @@ a {
     margin: -76px 0 0 -76px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #A6B0EF;
+    border-top: 16px solid #FFC600;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -144,7 +144,7 @@ a {
 #main-iframe {
     width: 100%;
     border: none;
-    min-height: 100vh;
+    min-height: 90vh;
     /* the height can be changed to the full height of the iframe content */
 }
 
