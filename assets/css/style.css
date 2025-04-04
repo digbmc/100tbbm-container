@@ -144,7 +144,7 @@ a {
 #main-iframe {
     width: 100%;
     border: none;
-    min-height: 90vh;
+    min-height: 110vh;
     /* the height can be changed to the full height of the iframe content */
 }
 
