@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <main>
+        <header>
+            <h1 class="title">
+                <span class="title-span-1">100 Thousand</span>
+                <span class="title-span-2">Billion</span>
+                <span class="title-span-3">Bryn Mawrs</span>
+            </h1>
+            <div class="box description">
+                <p>Inspired by Raymond Queneau's 1961 project, <em>100 Thousand Billion Poems</em>, this project uses creative constraints to generate 100 Thousand Billion possible undergraduate curricula for Bryn Mawr College.</p>
+                <a href="/100-tbbm/"><button id="main-button">Show me one possible Bryn Mawr</button></a>
+                <p id="demo"></p>
+            </div>
+        </header>
+        <div >
+            {{ content }}
+        </div>
+         <footer>
+        <p><a href="/100-tbbm/">100 Thousand Billion Bryn Mawrs</a></p>
+        </footer>
+    </main>
+   
+</body>
+</html>
