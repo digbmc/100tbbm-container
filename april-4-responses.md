@@ -4,7 +4,7 @@ layout: responses
 
 # Responses
 
-Below are all the responses from the original April 4 workshop, sorted by category. You can see [one curriculum at a time here](/100-tbbm/).
+Below are all the responses from the original April 4 workshop, sorted by category. You can see [one curriculum at a time here]({{ '/' | relative_url }}).
 
 ## **First-Year Seminars:**
 
