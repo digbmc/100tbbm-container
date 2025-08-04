@@ -11,15 +11,15 @@
             </h1>
             <div class="box description">
                 <p>Inspired by Raymond Queneau's 1961 project, <em>100 Thousand Billion Poems</em>, this project uses creative constraints to generate 100 Thousand Billion possible undergraduate curricula for Bryn Mawr College.</p>
-                <a href="/100-tbbm/"><button id="main-button">Show me one possible Bryn Mawr</button></a>
-                <p id="demo"></p>
+                <a href="{{ '/' | relative_url }}"><button id="main-button">Show me one possible Bryn Mawr</button></a>
+                <!-- <p id="demo"></p> -->
             </div>
         </header>
-        <div >
+        <div>
             {{ content }}
         </div>
          <footer>
-        <p><a href="/100-tbbm/">100 Thousand Billion Bryn Mawrs</a></p>
+        <p><a href="{{ '/' | relative_url }}">100 Thousand Billion Bryn Mawrs</a></p>
         </footer>
     </main>
    
