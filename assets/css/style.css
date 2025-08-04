@@ -36,9 +36,9 @@ footer {
 }
 
 li {
-    list-style: none;
+    /* list-style: none; */
     margin-bottom: 10px;
-}
+} 
 
 .title {
     display:flex;
