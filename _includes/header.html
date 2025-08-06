@@ -6,7 +6,7 @@
     </h1>
     <div class="box description">
         <p>Inspired by Raymond Queneau's 1961 project, <em>100 Thousand Billion Poems</em>, this project uses creative constraints to generate 100 Thousand Billion possible undergraduate curricula for Bryn Mawr College.</p>
-         <button id="main-button" onclick="loading()">Show me one possible Bryn Mawr</button>
+         {% if page.layout == 'default' %}<button id="main-button" onclick="loading()">Show me one possible Bryn Mawr</button>{% endif %}
         <p id="demo"></p>
     </div>
 </header>

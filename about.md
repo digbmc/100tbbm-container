@@ -1,0 +1,12 @@
+---
+layout: responses
+---
+
+<h1>About</h1>
+<p>As part of President Wendy Cadge’s Current Topics in Higher Education series, we ran an April 2025 workshop that generated 100 thousand billion (100 trillion) possible Bryn Mawr curricula in about 60 minutes. The goal of this workshop was not to redesign Bryn Mawr’s curriculum. It was not to identify “the best” Bryn Mawr curriculum, nor even to identify problems in our current curriculum. The goal was to generate novel ideas — to shake up our thinking — through the use of creative constraints, a method championed by the <em>Ouvroir de Littérature Potentielle</em> (the "workshop of potential literature," stylized Oulipo). This cross-disciplinary collaboration between writers and mathematicians uses constraints to generate new ideas and structures. Our workshop was riffing off a 1961 work by Ouplio-founder Raymond Queneau: 10 sonnets, each with 14 lines. Each line is printed on a strip of paper, which can be flipped independently of the rest of the poem. Because each line fits with each poem, the lines can be combined to create 100 thousand billion (100 trillion) different possible poems. It’s called <em>A 100 Thousand Billion Poems</em>. In this workshop, Bryn Mawr faculty, staff, and students assembled a similar project: “100 Thousand Billion Bryn Mawrs."</p>
+
+<h2>Team</h2>
+<p><strong>Project leads:</strong> Selby Hearth and José Vergara</p>
+<p><strong>Developers:</strong> Emma Dermansky, Cameron Boucher, and Alice McGrath, with help from Alyssa Pivirotto</p>
+<p><em>Supported by Library & Information Technology Services and Digital Scholarship at Bryn Mawr College.</em></p>
+<!-- <a href = "x">Feedback Form</a> -->

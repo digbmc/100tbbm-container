@@ -2,26 +2,45 @@
 <html lang="en">
 {% include head.html %}
 <body>
+    {% include sidebar.html %}
+    <button class="sidebar-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="sidebar">
+    </button>
     <main>
-        <header>
-            <h1 class="title">
-                <span class="title-span-1">100 Thousand</span>
-                <span class="title-span-2">Billion</span>
-                <span class="title-span-3">Bryn Mawrs</span>
-            </h1>
-            <div class="box description">
-                <p>Inspired by Raymond Queneau's 1961 project, <em>100 Thousand Billion Poems</em>, this project uses creative constraints to generate 100 Thousand Billion possible undergraduate curricula for Bryn Mawr College.</p>
-                <a href="{{ '/' | relative_url }}"><button id="main-button">Show me one possible Bryn Mawr</button></a>
-                <!-- <p id="demo"></p> -->
-            </div>
-        </header>
+        {% include header.html %}
         <div>
             {{ content }}
         </div>
-         <footer>
-        <p><a href="{{ '/' | relative_url }}">100 Thousand Billion Bryn Mawrs</a></p>
-        </footer>
+        {% include footer.html %}
     </main>
-   
 </body>
 </html>
+<script>
+    // Support sidebar toggle
+    (function(document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var sidebarNavLink = document.querySelector('.sidebar-nav-item');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+      
+      // Toggle sidebar
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        checkbox.checked = !checkbox.checked;
+        toggle.setAttribute('aria-expanded', checkbox.checked);
+        sidebar.setAttribute('aria-hidden', !checkbox.checked);
+      });
+      
+      // Make sure we focus on the menu once it opens to aid tab navigation
+      sidebar.addEventListener('transitionend', function() {sidebarNavLink.focus()});
+      
+      // Clicking anywhere in the sidebar should close the menu
+      sidebar.addEventListener('click', function(e) {
+        checkbox.checked = false;
+        toggle.setAttribute('aria-expanded', false);
+        sidebar.setAttribute('aria-hidden', true);
+      })
+    })(document);
+</script>

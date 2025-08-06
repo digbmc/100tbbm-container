@@ -2,6 +2,12 @@
 <html lang="en">
 {% include head.html %}
 <body>
+    {% include sidebar.html %}
+    <button class="sidebar-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="sidebar">
+    </button>
     <main>
         {% include header.html %}
         <div id="main-content">
@@ -40,4 +46,30 @@
         iframeContainer.classList.remove("hidden");
         console.log("Done loading!");
     }
+
+    // Support sidebar toggle
+    (function(document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var sidebarNavLink = document.querySelector('.sidebar-nav-item');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+      
+      // Toggle sidebar
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        checkbox.checked = !checkbox.checked;
+        toggle.setAttribute('aria-expanded', checkbox.checked);
+        sidebar.setAttribute('aria-hidden', !checkbox.checked);
+      });
+      
+      // Make sure we focus on the menu once it opens to aid tab navigation
+      sidebar.addEventListener('transitionend', function() {sidebarNavLink.focus()});
+      
+      // Clicking anywhere in the sidebar should close the menu
+      sidebar.addEventListener('click', function(e) {
+        checkbox.checked = false;
+        toggle.setAttribute('aria-expanded', false);
+        sidebar.setAttribute('aria-hidden', true);
+      })
+    })(document);
 </script>
